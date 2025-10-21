@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDetailing - студия детейлинга</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">AutoDetailing</div>
+            <div class="menu">
+                <button class="nav-btn" id="homeBtn">На главную</button>
+                <button class="nav-btn" id="registerBtn">Регистрация</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="articles" id="mainPage">
+            <article class="article">
+                <img src="/Image/polirovka1.jpg" alt="Полировка кузова">
+                <h2>Премиум-полировка кузова</h2>
+            </article>
+
+            <article class="article">
+                <img src="/Image/himka.jpg" alt="Химчистка салона">
+                <h2>Глубокая чистка салона</h2>
+            </article>
+        </section>
+
+        <section class="register-form hidden" id="registerForm">
+            <h2>Регистрация</h2>
+            <form id="form">
+                <label>
+                    Имя:
+                    <input type="text" name="name" required>
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" required>
+                </label>
+
+                <label>
+                    Пароль:
+                    <input type="password" name="pwd" required>
+                </label>
+
+                <div class="gender">
+                    Пол:
+                    <label><input type="radio" name="gender" value="male" required> Мужской</label>
+                    <label><input type="radio" name="gender" value="female" required> Женский</label>
+                </div>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="subscribe"> Согласен получать рассылку новостей
+                </label>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+    </main>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>
