@@ -11,8 +11,8 @@
         <nav class="nav">
             <div class="logo">AutoDetailing</div>
             <div class="menu">
-                <button class="nav-btn" id="homeBtn">На главную</button>
-                <button class="nav-btn" id="registerBtn">Регистрация</button>
+                <a href="/html/form.html" class="nav-btn">На главную</a>
+                <a href="/html/register.html" class="nav-btn">Регистрация</a>
             </div>
         </nav>
     </header>
@@ -28,38 +28,6 @@
                 <img src="/Image/himka.jpg" alt="Химчистка салона">
                 <h2>Глубокая чистка салона</h2>
             </article>
-        </section>
-
-        <section class="register-form hidden" id="registerForm">
-            <h2>Регистрация</h2>
-            <form id="form">
-                <label>
-                    Имя:
-                    <input type="text" name="name" required>
-                </label>
-
-                <label>
-                    Email:
-                    <input type="email" name="email" required>
-                </label>
-
-                <label>
-                    Пароль:
-                    <input type="password" name="pwd" required>
-                </label>
-
-                <div class="gender">
-                    Пол:
-                    <label><input type="radio" name="gender" value="male" required> Мужской</label>
-                    <label><input type="radio" name="gender" value="female" required> Женский</label>
-                </div>
-
-                <label class="checkbox">
-                    <input type="checkbox" name="subscribe"> Согласен получать рассылку новостей
-                </label>
-
-                <button type="submit">Зарегистрироваться</button>
-            </form>
         </section>
     </main>
     

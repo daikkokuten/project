@@ -3,9 +3,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Регситрация</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="nav">
+            <div class="logo">AutoDetailing</div>
+            <div class="menu">
+                <a href="/html/form.html" class="nav-btn">На главную</a>
+                <a href="/html/register.html" class="nav-btn">Регистрация</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-form">
+            <h2>Регистрация</h2>
+            <form id="form">
+                <label>
+                    Имя:
+                    <input type="text" name="name" required>
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" required>
+                </label>
+
+                <label>
+                    Пароль:
+                    <input type="password" name="pwd" required>
+                </label>
+
+                <div class="gender">
+                    Пол:
+                    <label><input type="radio" name="gender" value="male" required> Мужской</label>
+                    <label><input type="radio" name="gender" value="female" required> Женский</label>
+                </div>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="subscribe"> Согласен получать рассылку новостей
+                </label>
+
+                <button type="submit">Зарегистрироваться</button>
+        </section>
+    </main>
 </body>
 </html>
